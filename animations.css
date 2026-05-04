@@ -1,0 +1,183 @@
+/* ============================================
+   ANIMATIONS CSS - Extra Animations
+   ============================================ */
+
+/* ===== TYPEWRITER ===== */
+.typewriter {
+    display: inline-block;
+    border-left: 3px solid #6366f1;
+    padding-left: 8px;
+    animation: blinkCaret 0.8s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    min-height: 1.8rem;
+}
+
+@keyframes blinkCaret {
+    0%, 100% { border-color: #6366f1; }
+    50% { border-color: transparent; }
+}
+
+/* ===== PARTICLES CANVAS ===== */
+#particles-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* ===== GLITCH ===== */
+.glitch {
+    position: relative;
+    display: inline-block;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.glitch::before {
+    color: #ff00c1;
+    z-index: -1;
+    animation: glitchTop 1s infinite;
+}
+
+.glitch::after {
+    color: #00fff9;
+    z-index: -2;
+    animation: glitchBottom 1.5s infinite;
+}
+
+@keyframes glitch {
+    0%, 100% { transform: none; }
+    7% { transform: skew(-0.5deg, -0.9deg); }
+    10% { transform: none; }
+    27% { transform: none; }
+    30% { transform: skew(0.8deg, -0.1deg); }
+    35% { transform: none; }
+    52% { transform: none; }
+    55% { transform: skew(-1deg, 0.2deg); }
+    72% { transform: none; }
+    75% { transform: skew(0.4deg, 1deg); }
+    80% { transform: none; }
+}
+
+@keyframes glitchTop {
+    0%, 100% { transform: none; opacity: 0; }
+    50% { transform: translate(-3px, -3px); opacity: 0.8; }
+}
+
+@keyframes glitchBottom {
+    0%, 100% { transform: none; opacity: 0; }
+    50% { transform: translate(3px, 3px); opacity: 0.8; }
+}
+
+/* ===== MORPHING BLOB ===== */
+.morph-blob {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.15), rgba(6, 182, 212, 0.1));
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    animation: morphBlob 8s ease-in-out infinite, floatBlob 6s ease-in-out infinite;
+    z-index: 0;
+    pointer-events: none;
+    filter: blur(30px);
+}
+
+@keyframes morphBlob {
+    0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+    25% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+    50% { border-radius: 40% 60% 30% 60% / 40% 40% 60% 50%; }
+    75% { border-radius: 60% 40% 50% 30% / 30% 50% 40% 60%; }
+    100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+}
+
+@keyframes floatBlob {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(-30px, 20px) scale(1.1); }
+}
+
+/* ===== 3D TILT ===== */
+.tilt-card {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: transform 0.1s ease;
+}
+
+/* ===== REVEAL ON SCROLL ===== */
+.reveal-element {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-element.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== PRELOADER ===== */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#preloader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#preloader .loader {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #e2e8f0;
+    border-top: 4px solid #6366f1;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+#preloader .loader-text {
+    color: #64748b;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ===== COUNTER UP FIX ===== */
+.stat-number {
+    min-width: 50px;
+    display: inline-block;
+    transition: none;
+}
+
+.stat-number.counting {
+    color: #6366f1;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
