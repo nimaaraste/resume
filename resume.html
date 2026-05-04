@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رزومه شخصی | نیما آراسته</title>
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== PRELOADER ========== -->
+    <div id="preloader">
+        <div class="loader"></div>
+        <div class="loader-text">در حال بارگذاری...</div>
+    </div>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+        <canvas id="particles-canvas"></canvas>
+        <div class="morph-blob" style="top: 15%; left: 8%;"></div>
+        <div class="morph-blob" style="bottom: 10%; right: 5%; width: 220px; height: 220px; animation-delay: 2s; animation-duration: 10s;"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    برای همکاری در دسترس هستم
+                </div>
+                <h1 class="hero-title">
+                    سلام! من <span data-text="نیما آراسته">نیما آراسته</span> هستم
+                </h1>
+                <p class="hero-subtitle">
+                    <span id="typewriter" class="typewriter"></span>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        📬 ارتباط با من
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="avatar-frame">
+                    <div class="avatar-inner">
+                        <img src="20240912_183400.jpg" alt="nima arasteh">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+             <!-- ========== ABOUT ========== -->
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">درباره من</span>
+                <h2 class="section-title">خلاصه‌ای از مسیر حرفه‌ای</h2>
+                <p class="section-desc">توسعه‌دهنده فرانت‌اند با تمرکز بر طراحی رابط کاربری زیبا و کاربرپسند</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">+۵</span>
+                        <span class="stat-label">ماه تجربه</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">+2</span>
+                        <span class="stat-label">پروژه تکمیل شده</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">+3</span>
+                        <span class="stat-label">مشتری راضی</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3>توسعه‌دهنده خلاق و پیشرو</h3>
+                    <p>
+                        از زمانی که با دنیای طراحی و توسعه وب آشنا شدم، عاشق ساختن تجربه‌های کاربری زیبا و کارآمد شدم. 
+                        مسیرم رو از HTML و CSS شروع کردم و حالا در حال یادگیری عمیق‌تر React و ابزارهای مدرن فرانت‌اند هستم.
+                        به طراحی تمیز، کدنویسی خوانا و رابط کاربری مینیمال اعتقاد دارم.
+                    </p>
+                    <div class="about-highlights">
+                        <span class="highlight-tag">JavaScript</span>
+                        <span class="highlight-tag">React.js</span>
+                        <span class="highlight-tag">Vue.js</span>
+                        <span class="highlight-tag">TypeScript</span>
+                        <span class="highlight-tag">Next.js</span>
+                        <span class="highlight-tag">Node.js</span>
+                        <span class="highlight-tag">Tailwind CSS</span>
+                        <span class="highlight-tag">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- ========== EXPERIENCE ========== -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">سابقه کاری</span>
+                <h2 class="section-title">تجربیات حرفه‌ای</h2>
+                <p class="section-desc">مسیر کوتاه اما پر از یادگیری و چالش‌های جذاب</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">۱۴۰۳ - اکنون</span>
+                        <h3>توسعه‌دهنده فرانت‌اند و طراح تجربه کاربری</h3>
+                        <p class="company">تیم مکس دو</p>
+                        <p>
+                            طراحی و توسعه رابط کاربری پروژه‌های تحت وب با استفاده از HTML، CSS و JavaScript.
+                            همکاری نزدیک با تیم طراحی برای پیاده‌سازی طرح‌های Figma و بهبود تجربه کاربری.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">مهارت‌ها</span>
+                <h2 class="section-title">توانمندی‌های فنی</h2>
+                <p class="section-desc">بزارها و تکنولوژی‌هایی که باهاشون کار می‌کنم</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><span class="icon">⚙️</span> فرانت‌اند</h3>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-info"><span>HTML/CSS</span><span>۹۵٪</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+                    </div>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-info"><span>JavaScript</span><span>۶۰٪</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 60%;"></div></div>
+                    </div>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-info"><span>React.js</span><span>۳۴٪</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 25%;"></div></div>
+                    </div>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-info"><span>Vue.js</span><span>0٪</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 0%;"></div></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><span class="icon">🎨</span> طراح UI/UX</h3>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-info"><span>Figma</span><span>۷۸٪</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 78%;"></div></div>
+                    </div>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-info"><span>ADOBE XD</span><span>۳۵٪</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 35%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+   <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">تماس با من</span>
+                <h2 class="section-title">پروژه‌ای در ذهن داری؟</h2>
+                <p class="section-desc">خوشحال میشم از طریق راه‌های زیر با من در ارتباط باشی</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info-list">
+                    <div class="contact-info-item">
+                        <div class="icon-circle">📧</div>
+                        <div class="info-text">
+                            <h4>ایمیل</h4>
+                            <span>arastehnima3@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="icon-circle">📱</div>
+                        <div class="info-text">
+                            <h4>تلفن</h4>
+                            <span>09363465510</span>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="icon-circle">📍</div>
+                        <div class="info-text">
+                            <h4>موقعیت</h4>
+                            <span>کرج، ایران</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">نام کامل</label>
+                        <input type="text" id="name" placeholder="نام خود را وارد کنید" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">آدرس ایمیل</label>
+                        <input type="email" id="email" placeholder="example@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">پیام شما</label>
+                        <textarea id="message" placeholder="پیام خود را اینجا بنویسید..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">🚀 ارسال پیام</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" title="GitHub">🐙</a>
+                <a href="#" title="LinkedIn">💼</a>
+                <a href="#" title="Twitter">🐦</a>
+                <a href="#" title="Telegram">📨</a>
+            </div>
+            <p>© ۱۴۰۴ — طراحی و توسعه با ❤️ نیما آراسته | </p>
+        </div>
+    </footer>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script>
+        /* ===== PRELOADER ===== */
+        (function() {
+            var preloader = document.getElementById('preloader');
+            function hidePreloader() {
+                if (preloader && !preloader.classList.contains('hidden')) {
+                    preloader.classList.add('hidden');
+                    setTimeout(function() { preloader.style.display = 'none'; }, 500);
+                }
+            }
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(hidePreloader, 2000);
+            });
+            setTimeout(hidePreloader, 4000);
+        })();
+
+        /* ===== TYPEWRITER ===== */
+        (function() {
+            var typewriter = document.getElementById('typewriter');
+            if (!typewriter) return;
+            var texts = [
+                'برنامه‌نویس فرانت‌اند',
+                'توسعه‌دهنده React',
+                'طراح رابط کاربری',
+                'عاشق کدنویسی 💻'
+            ];
+            var textIndex = 0;
+            var charIndex = 0;
+            var isDeleting = false;
+            var typeSpeed = 100;
+
+            function typeWriter() {
+                var currentText = texts[textIndex];
+                if (isDeleting) {
+                    typewriter.textContent = currentText.substring(0, charIndex - 1);
+                    charIndex--;
+                    typeSpeed = 40;
+                } else {
+                    typewriter.textContent = currentText.substring(0, charIndex + 1);
+                    charIndex++;
+                    typeSpeed = 100;
+                }
+                if (!isDeleting && charIndex === currentText.length) {
+                    typeSpeed = 1500;
+                    isDeleting = true;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    textIndex = (textIndex + 1) % texts.length;
+                    typeSpeed = 500;
+                }
+                setTimeout(typeWriter, typeSpeed);
+            }
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(typeWriter, 1200);
+            });
+        })();
+
+        /* ===== PARTICLES NETWORK ===== */
+        (function() {
+            var canvas = document.getElementById('particles-canvas');
+            if (!canvas) return;
+            var ctx = canvas.getContext('2d');
+            var particles = [];
+            var maxParticles = 60;
+            var connectionDistance = 120;
+
+            function resizeCanvas() {
+                var hero = document.querySelector('.hero');
+                canvas.width = hero.offsetWidth;
+                canvas.height = hero.offsetHeight;
+            }
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
+
+            function Particle() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.vx = (Math.random() - 0.5) * 0.8;
+                this.vy = (Math.random() - 0.5) * 0.8;
+                this.radius = Math.random() * 2 + 1;
+            }
+
+            Particle.prototype.update = function() {
+                this.x += this.vx;
+                this.y += this.vy;
+                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+            };
+
+            Particle.prototype.draw = function() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(99, 102, 241, 0.4)';
+                ctx.fill();
+            };
+
+            for (var i = 0; i < maxParticles; i++) {
+                particles.push(new Particle());
+            }
+
+            function connect() {
+                for (var i = 0; i < particles.length; i++) {
+                    for (var j = i + 1; j < particles.length; j++) {
+                        var dx = particles[i].x - particles[j].x;
+                        var dy = particles[i].y - particles[j].y;
+                        var dist = Math.sqrt(dx * dx + dy * dy);
+                        if (dist < connectionDistance) {
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.strokeStyle = 'rgba(99, 102, 241, ' + (1 - dist / connectionDistance).toFixed(2) + ')';
+                            ctx.lineWidth = 0.6;
+                            ctx.stroke();
+                        }
+                    }
+                }
+            }
+
+            function animateParticles() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                for (var k = 0; k < particles.length; k++) {
+                    particles[k].update();
+                    particles[k].draw();
+                }
+                connect();
+                requestAnimationFrame(animateParticles);
+            }
+            animateParticles();
+        })();
+
+        /* ===== 3D TILT ===== */
+        (function() {
+            var cards = document.querySelectorAll('.stat-card, .project-card, .skill-category');
+            for (var i = 0; i < cards.length; i++) {
+                (function(card) {
+                    card.classList.add('tilt-card');
+                    card.addEventListener('mousemove', function(e) {
+                        var rect = card.getBoundingClientRect();
+                        var x = e.clientX - rect.left;
+                        var y = e.clientY - rect.top;
+                        var rotateX = (y - rect.height / 2) / 10;
+                        var rotateY = (rect.width / 2 - x) / 10;
+                        card.style.transform = 'perspective(1000px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) scale3d(1.02, 1.02, 1.02)';
+                    });
+                    card.addEventListener('mouseleave', function() {
+                        card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+                    });
+                })(cards[i]);
+            }
+        })();
+
+        /* ===== REVEAL ON SCROLL ===== */
+        (function() {
+            var revealEls = document.querySelectorAll('.stat-card, .timeline-item, .project-card, .skill-category, .contact-info-item');
+            for (var i = 0; i < revealEls.length; i++) {
+                revealEls[i].classList.add('reveal-element');
+            }
+            var observer = new IntersectionObserver(function(entries) {
+                for (var j = 0; j < entries.length; j++) {
+                    if (entries[j].isIntersecting) {
+                        entries[j].target.classList.add('visible');
+                        observer.unobserve(entries[j].target);
+                    }
+                }
+            }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+            for (var k = 0; k < revealEls.length; k++) {
+                observer.observe(revealEls[k]);
+            }
+        })();
+
+        /* ===== COUNTER UP ===== */
+(function() {
+    function animateCounter(el, target, duration) {
+        var start = 0;
+        var startTime = null;
+        var step = target / (duration / 16);
+        
+        // اگه عدد خیلی کوچیکه، با گام‌های ریزتر حرکت کنه
+        if (target <= 5) {
+            step = target / (duration / 10); // گام‌های ریزتر
+        }
+        
+        function update(timestamp) {
+            if (!startTime) startTime = timestamp;
+            var elapsed = timestamp - startTime;
+            var progress = Math.min(elapsed / duration, 1);
+            
+            // easing برای نرم‌تر شدن
+            var eased = 1 - Math.pow(1 - progress, 3);
+            var current = Math.floor(eased * target);
+            
+            if (current < target) {
+                el.textContent = '+' + current;
+                requestAnimationFrame(update);
+            } else {
+                el.textContent = '+' + target;
+                el.classList.remove('counting');
+            }
+        }
+        
+        el.classList.add('counting');
+        requestAnimationFrame(update);
+    }
+    
+    var statsSection = document.querySelector('.about-stats');
+    if (statsSection) {
+        var counterObserver = new IntersectionObserver(function(entries) {
+            if (entries[0].isIntersecting) {
+                var counters = statsSection.querySelectorAll('.stat-number');
+                for (var i = 0; i < counters.length; i++) {
+                    var counter = counters[i];
+                    var target = parseInt(counter.textContent.replace(/[+\u06F0-\u06F9]/g, function(m) {
+                        // تبدیل اعداد فارسی به انگلیسی
+                        var persian = ['۰','۱','۲','۳','۴','۵','۶','۷','۸','۹'];
+                        var english = ['0','1','2','3','4','5','6','7','8','9'];
+                        var idx = persian.indexOf(m);
+                        return idx >= 0 ? english[idx] : m;
+                    }));
+                    
+                    if (isNaN(target)) target = parseInt(counter.textContent.replace(/[^0-9]/g, ''));
+                    if (isNaN(target)) target = 5; // fallback
+                    
+                    counter.textContent = '+0';
+                    
+                    // تأخیر برای هر کارت
+                    (function(el, t, delay) {
+                        setTimeout(function() {
+                            animateCounter(el, t, 2500);
+                        }, delay);
+                    })(counter, target, i * 300);
+                }
+                counterObserver.unobserve(statsSection);
+            }
+        }, { threshold: 1 });
+        counterObserver.observe(statsSection);
+    }
+})();
+    </script>
+
+</body>
+</html>
